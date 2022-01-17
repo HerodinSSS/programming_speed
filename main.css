@@ -7,20 +7,32 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background-color: #10032b;
+    background-color: #2b2733;
+    overflow-wrap: normal;
+
 }
 
 body, .quot-input {
-    font-family: 'Courier New', Courier, monospace
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+span {
+    color: gray;
 }
 
 .container {
-    background-color: #F0DB4F;
+    background-color: #353535;
     padding: 1rem;
     border-radius: .5rem;
-    width: 700px;
-    max-width: 90%;
+    width: 1000px;
 }
+
+pre {
+    white-space: pre-wrap;       /* Since CSS 2.1 */
+    word-wrap: break-word;       /* Internet Explorer 5.5+ */
+    text-decoration: underline;}
 
 .timer {
     position: absolute;
@@ -47,7 +59,7 @@ body, .quot-input {
     margin: auto;
     resize: none;
     padding: .5rem 1rem;
-    font-size: 1rem;
+    font-size: 20px;
     border-radius: .5rem;
 }
 
@@ -57,9 +69,14 @@ body, .quot-input {
 
 .correct {
     color: green;
+    text-decoration: underline;
 }
 
 .incorrect {
     color: red;
     text-decoration: underline;
+}
+
+.nll{
+    color:  #353535;
 }
